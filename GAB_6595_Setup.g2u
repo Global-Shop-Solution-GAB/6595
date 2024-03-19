@@ -1,0 +1,1191 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.frmRuleSetup..Create(DashForm)
+Gui.frmRuleSetup..Caption("Estimating Program Setup")
+Gui.frmRuleSetup..Size(20835,12675)
+Gui.frmRuleSetup..MinX(0)
+Gui.frmRuleSetup..MinY(0)
+Gui.frmRuleSetup..Position(0,0)
+Gui.frmRuleSetup..BackColor(-2147483633)
+Gui.frmRuleSetup..MousePointer(0)
+Gui.frmRuleSetup..Event(UnLoad,frmRuleSetup_UnLoad)
+Gui.frmRuleSetup..AlwaysOnTop(False)
+Gui.frmRuleSetup..FontName("Tahoma")
+Gui.frmRuleSetup..FontSize(8.25)
+Gui.frmRuleSetup..ControlBox(True)
+Gui.frmRuleSetup..MaxButton(True)
+Gui.frmRuleSetup..MinButton(True)
+Gui.frmRuleSetup..Moveable(True)
+Gui.frmRuleSetup..Sizeable(True)
+Gui.frmRuleSetup..ShowInTaskBar(True)
+Gui.frmRuleSetup..TitleBar(True)
+Gui.frmRuleSetup..BarSaveButton(True,False)
+Gui.frmRuleSetup..Event(SaveButtonClick,frmRuleSetup_SaveButtonClick)
+Gui.frmRuleSetup.gsGCWorkcentre.create(gsgridcontrol)
+Gui.frmRuleSetup.gsGCWorkcentre.size(19410,5130)
+Gui.frmRuleSetup.gsGCWorkcentre.position(195,6510)
+Gui.frmRuleSetup.gsGCWorkcentre.Enabled(True)
+Gui.frmRuleSetup.gsGCWorkcentre.Visible(True)
+Gui.frmRuleSetup.gsGCWorkcentre.Zorder(0)
+Gui.frmRuleSetup.txtSR.Create(TextBox,"F",False,435,300,0,6705,4335,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.lbl1.Create(Label,"Default Source Code",True,1500,210,0,6390,345,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl1.BorderStyle(0)
+Gui.frmRuleSetup.txtDocumentControl.Create(TextBox,"",True,3750,300,0,8310,360,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtWCCode.Create(TextBox,"",True,1215,300,0,195,5910,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.cmdWCBrowse.Create(Button)
+Gui.frmRuleSetup.cmdWCBrowse.Size(495,375)
+Gui.frmRuleSetup.cmdWCBrowse.Position(1365,5865)
+Gui.frmRuleSetup.cmdWCBrowse.Caption("^")
+Gui.frmRuleSetup.cmdWCBrowse.Event(Click,cmdWCBrowse_Click)
+Gui.frmRuleSetup.cmdWCBrowse.Enabled(True)
+Gui.frmRuleSetup.cmdWCBrowse.Visible(True)
+Gui.frmRuleSetup.cmdWCBrowse.Zorder(0)
+Gui.frmRuleSetup.cmdWCBrowse.FontName("Tahoma")
+Gui.frmRuleSetup.cmdWCBrowse.FontSize(8.25)
+Gui.frmRuleSetup.txtDescription.Create(TextBox,"",True,1830,300,0,3600,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtLabourUnit1.Create(TextBox,"",True,1215,300,0,5490,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtLabourUnit2.Create(TextBox,"",True,1215,300,0,6780,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtbilling.Create(TextBox,"",True,1215,300,0,8055,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtCostUnit.Create(TextBox,"",True,480,300,0,9330,5925,False,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.cmdCostUnit.Create(Button)
+Gui.frmRuleSetup.cmdCostUnit.Size(600,375)
+Gui.frmRuleSetup.cmdCostUnit.Position(9780,5880)
+Gui.frmRuleSetup.cmdCostUnit.Caption("^")
+Gui.frmRuleSetup.cmdCostUnit.Event(Click,cmdCostUnit_Click)
+Gui.frmRuleSetup.cmdCostUnit.Enabled(True)
+Gui.frmRuleSetup.cmdCostUnit.Visible(True)
+Gui.frmRuleSetup.cmdCostUnit.Zorder(0)
+Gui.frmRuleSetup.cmdCostUnit.FontName("Tahoma")
+Gui.frmRuleSetup.cmdCostUnit.FontSize(8.25)
+Gui.frmRuleSetup.ddlTimeType.Create(DropDownList)
+Gui.frmRuleSetup.ddlTimeType.Size(510,300)
+Gui.frmRuleSetup.ddlTimeType.Position(10515,5895)
+Gui.frmRuleSetup.ddlTimeType.Enabled(True)
+Gui.frmRuleSetup.ddlTimeType.Visible(True)
+Gui.frmRuleSetup.ddlTimeType.Zorder(0)
+Gui.frmRuleSetup.ddlTimeType.FontName("Tahoma")
+Gui.frmRuleSetup.ddlTimeType.FontSize(8.25)
+Gui.frmRuleSetup.txtSetupTime.Create(TextBox,"",True,795,300,0,11190,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtSetupRate.Create(TextBox,"",True,1395,300,0,12210,5925,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtWCOrder.Create(TextBox,"",True,345,300,0,14040,5910,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.chkShowWC.Create(CheckBox)
+Gui.frmRuleSetup.chkShowWC.Size(1305,300)
+Gui.frmRuleSetup.chkShowWC.Position(14430,5910)
+Gui.frmRuleSetup.chkShowWC.Caption("Show WC?")
+Gui.frmRuleSetup.chkShowWC.Enabled(True)
+Gui.frmRuleSetup.chkShowWC.Visible(True)
+Gui.frmRuleSetup.chkShowWC.Zorder(0)
+Gui.frmRuleSetup.chkShowWC.FontName("Tahoma")
+Gui.frmRuleSetup.chkShowWC.FontSize(8.25)
+Gui.frmRuleSetup.cmdAdd.Create(Button)
+Gui.frmRuleSetup.cmdAdd.Size(1320,375)
+Gui.frmRuleSetup.cmdAdd.Position(15915,5880)
+Gui.frmRuleSetup.cmdAdd.Caption("Add")
+Gui.frmRuleSetup.cmdAdd.Event(Click,cmdAdd_Click)
+Gui.frmRuleSetup.cmdAdd.Enabled(True)
+Gui.frmRuleSetup.cmdAdd.Visible(True)
+Gui.frmRuleSetup.cmdAdd.Zorder(0)
+Gui.frmRuleSetup.cmdAdd.FontName("Tahoma")
+Gui.frmRuleSetup.cmdAdd.FontSize(8.25)
+Gui.frmRuleSetup.cmdMassAdd.Create(Button)
+Gui.frmRuleSetup.cmdMassAdd.Size(1320,375)
+Gui.frmRuleSetup.cmdMassAdd.Position(17325,5910)
+Gui.frmRuleSetup.cmdMassAdd.Caption("Mass Add")
+Gui.frmRuleSetup.cmdMassAdd.Event(Click,cmdMassAdd_Click)
+Gui.frmRuleSetup.cmdMassAdd.Enabled(True)
+Gui.frmRuleSetup.cmdMassAdd.Visible(True)
+Gui.frmRuleSetup.cmdMassAdd.Zorder(0)
+Gui.frmRuleSetup.cmdMassAdd.FontName("Tahoma")
+Gui.frmRuleSetup.cmdMassAdd.FontSize(8.25)
+Gui.frmRuleSetup.lbl3.Create(Label,"Workcentre",True,840,210,0,210,5655,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl3.BorderStyle(0)
+Gui.frmRuleSetup.lbl6.Create(Label,"Description",True,810,210,0,3600,5685,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl6.BorderStyle(0)
+Gui.frmRuleSetup.lbl7.Create(Label,"Labour Units",True,915,210,0,5475,5685,True,2,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl7.BorderStyle(0)
+Gui.frmRuleSetup.lbl8.Create(Label,"Billing (Cost /hr)",True,1140,210,0,8055,5685,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl8.BorderStyle(0)
+Gui.frmRuleSetup.lbl9.Create(Label,"Cost Unit",True,645,210,0,9345,5685,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl9.BorderStyle(0)
+Gui.frmRuleSetup.lbl10.Create(Label,"Setup Time",True,795,210,0,11175,5700,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl10.BorderStyle(0)
+Gui.frmRuleSetup.lbl11.Create(Label,"Setup Rate (cost/hr)",True,1470,210,0,12195,5700,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl11.BorderStyle(0)
+Gui.frmRuleSetup.lbl12.Create(Label,"Order",True,435,210,0,13935,5715,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl12.BorderStyle(0)
+Gui.frmRuleSetup.lbl13.Create(Label,"WC Display",True,825,210,0,14490,5700,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl13.BorderStyle(0)
+Gui.frmRuleSetup.lblTime.Create(Label,"Time",True,330,210,0,10530,5685,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblTime.BorderStyle(0)
+Gui.frmRuleSetup.lbl15.Create(Label,"Document Control Path:",True,1680,210,0,8325,90,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl15.BorderStyle(0)
+Gui.frmRuleSetup.fraPowder.Create(Frame)
+Gui.frmRuleSetup.fraPowder.Size(6180,855)
+Gui.frmRuleSetup.fraPowder.Position(8295,3720)
+Gui.frmRuleSetup.fraPowder.Caption("Powder Coating Settings")
+Gui.frmRuleSetup.fraPowder.Visible(True)
+Gui.frmRuleSetup.fraPowder.Enabled(True)
+Gui.frmRuleSetup.fraPowder.Zorder(0)
+Gui.frmRuleSetup.fraPowder.FontName("Tahoma")
+Gui.frmRuleSetup.fraPowder.FontSize(8.25)
+Gui.frmRuleSetup.txtManPower.Create(TextBox,"",True,1035,300,0,1230,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtManPower.Parent("fraPowder")
+Gui.frmRuleSetup.txtGap.Create(TextBox,"",True,900,300,0,90,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtGap.Parent("fraPowder")
+Gui.frmRuleSetup.txtGap.NumericOnly(2)
+Gui.frmRuleSetup.txtPowLabour.Create(TextBox,"",True,1215,300,0,2535,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtPowLabour.Parent("fraPowder")
+Gui.frmRuleSetup.lblPowLab.Create(Label,"Labour Rate ($/hr)",True,1335,210,0,2535,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblPowLab.Parent("fraPowder")
+Gui.frmRuleSetup.lblPowLab.BorderStyle(0)
+Gui.frmRuleSetup.lblPowSetCost.Create(Label,"Setup Cost (%)",True,1110,210,0,4605,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblPowSetCost.Parent("fraPowder")
+Gui.frmRuleSetup.lblPowSetCost.BorderStyle(0)
+Gui.frmRuleSetup.txtPowSetupCost.Create(TextBox,"",True,1215,300,0,4605,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtPowSetupCost.Parent("fraPowder")
+Gui.frmRuleSetup.lblGap.Create(Label,"Gap",True,300,210,0,90,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblGap.Parent("fraPowder")
+Gui.frmRuleSetup.lblGap.BorderStyle(0)
+Gui.frmRuleSetup.lblManPower.Create(Label,"Man Power",True,840,210,0,1230,240,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblManPower.Parent("fraPowder")
+Gui.frmRuleSetup.lblManPower.BorderStyle(0)
+Gui.frmRuleSetup.fraDef.Create(Frame)
+Gui.frmRuleSetup.fraDef.Size(7815,1080)
+Gui.frmRuleSetup.fraDef.Position(360,45)
+Gui.frmRuleSetup.fraDef.Caption("Default Values")
+Gui.frmRuleSetup.fraDef.Enabled(True)
+Gui.frmRuleSetup.fraDef.Visible(True)
+Gui.frmRuleSetup.fraDef.Zorder(0)
+Gui.frmRuleSetup.fraDef.FontName("Tahoma")
+Gui.frmRuleSetup.fraDef.FontSize(8.25)
+Gui.frmRuleSetup.txtDefaultPacking.Create(TextBox,"",True,375,300,0,4440,570,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtDefaultPacking.NumericOnly(True)
+Gui.frmRuleSetup.txtDefaultPacking.Parent("fraDef")
+Gui.frmRuleSetup.txtPL.Create(TextBox,"",True,450,300,0,1575,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtPL.Parent("fraDef")
+Gui.frmRuleSetup.lbl4.Create(Label,"Default Packing Cost",True,1485,210,0,4440,300,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl4.Parent("fraDef")
+Gui.frmRuleSetup.lbl4.BorderStyle(0)
+Gui.frmRuleSetup.lblCut.Create(Label,"Default Cutting WC",True,1350,210,0,2850,300,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lblCut.Parent("fraDef")
+Gui.frmRuleSetup.lblCut.BorderStyle(0)
+Gui.frmRuleSetup.txtDefaultCutting.Create(TextBox,"",True,600,300,0,2850,555,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtDefaultCutting.Parent("fraDef")
+Gui.frmRuleSetup.cmdUM.Create(Button)
+Gui.frmRuleSetup.cmdUM.Size(555,375)
+Gui.frmRuleSetup.cmdUM.Position(840,450)
+Gui.frmRuleSetup.cmdUM.Caption("^")
+Gui.frmRuleSetup.cmdUM.DefaultValue("^")
+Gui.frmRuleSetup.cmdUM.Event(Click,cmdUM_Click)
+Gui.frmRuleSetup.cmdUM.Parent("fraDef")
+Gui.frmRuleSetup.cmdUM.Enabled(True)
+Gui.frmRuleSetup.cmdUM.Visible(True)
+Gui.frmRuleSetup.cmdUM.Zorder(0)
+Gui.frmRuleSetup.cmdUM.FontName("Tahoma")
+Gui.frmRuleSetup.cmdUM.FontSize(8.25)
+Gui.frmRuleSetup.lbl16.Create(Label,"UM",True,600,255,0,210,300,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl16.Parent("fraDef")
+Gui.frmRuleSetup.lbl16.BorderStyle(0)
+Gui.frmRuleSetup.txtUM.Create(TextBox,"",True,465,300,0,255,510,True,0,"Arial",8,-2147483643,1)
+Gui.frmRuleSetup.txtUM.Parent("fraDef")
+Gui.frmRuleSetup.lbl14.Create(Label,"PL",True,615,255,0,1545,285,True,0,"Arial",8,-2147483633,0,0)
+Gui.frmRuleSetup.lbl14.Parent("fraDef")
+Gui.frmRuleSetup.lbl14.BorderStyle(0)
+Gui.frmRuleSetup.cmdDefaultPL.Create(Button)
+Gui.frmRuleSetup.cmdDefaultPL.Size(540,375)
+Gui.frmRuleSetup.cmdDefaultPL.Position(2145,510)
+Gui.frmRuleSetup.cmdDefaultPL.Caption("^")
+Gui.frmRuleSetup.cmdDefaultPL.Event(Click,cmdDefaultPL_Click)
+Gui.frmRuleSetup.cmdDefaultPL.Parent("fraDef")
+Gui.frmRuleSetup.cmdDefaultPL.Enabled(True)
+Gui.frmRuleSetup.cmdDefaultPL.Visible(True)
+Gui.frmRuleSetup.cmdDefaultPL.Zorder(0)
+Gui.frmRuleSetup.cmdDefaultPL.FontName("Tahoma")
+Gui.frmRuleSetup.cmdDefaultPL.FontSize(8.25)
+Gui.frmRuleSetup.gsgcRules.Create(GsGridControl)
+Gui.frmRuleSetup.gsgcRules.Size(7815,2400)
+Gui.frmRuleSetup.gsgcRules.Position(345,1200)
+Gui.frmRuleSetup.gsgcRules.Enabled(True)
+Gui.frmRuleSetup.gsgcRules.Visible(True)
+Gui.frmRuleSetup.gsgcRules.Zorder(0)
+Gui.frmRuleSetup.txtOpCode.Create(TextBox,"",True,1050,300,0,1905,5910,True,0,"Tahoma",8.25,,1)
+Gui.frmRuleSetup.cmdOpCode.Create(Button)
+Gui.frmRuleSetup.cmdOpCode.Enabled(True)
+Gui.frmRuleSetup.cmdOpCode.Visible(True)
+Gui.frmRuleSetup.cmdOpCode.Zorder(0)
+Gui.frmRuleSetup.cmdOpCode.Size(570,345)
+Gui.frmRuleSetup.cmdOpCode.Position(2985,5910)
+Gui.frmRuleSetup.cmdOpCode.Caption("^")
+Gui.frmRuleSetup.cmdOpCode.FontName("Tahoma")
+Gui.frmRuleSetup.cmdOpCode.FontSize(8.25)
+Gui.frmRuleSetup.cmdOpCode.Event(Click,cmdOpCode_Click)
+Gui.frmRuleSetup.lbl17.Create(Label,"Op code",True,600,195,0,1935,5685,True,0,"Tahoma",8.25,,0,0)
+Gui.frmRuleSetup.lbl17.BorderStyle(0)
+Gui.frmRuleSetup.chkAutoIncrement.Create(CheckBox)
+Gui.frmRuleSetup.chkAutoIncrement.Enabled(True)
+Gui.frmRuleSetup.chkAutoIncrement.Visible(True)
+Gui.frmRuleSetup.chkAutoIncrement.Zorder(0)
+Gui.frmRuleSetup.chkAutoIncrement.Size(3750,300)
+Gui.frmRuleSetup.chkAutoIncrement.Position(8325,1005)
+Gui.frmRuleSetup.chkAutoIncrement.Caption("Auto Increment Part Number/ID")
+Gui.frmRuleSetup.chkAutoIncrement.FontName("Tahoma")
+Gui.frmRuleSetup.chkAutoIncrement.FontSize(8.25)
+Gui.frmRuleSetup.gsgcPartIncrement.Create(GsGridControl)
+Gui.frmRuleSetup.gsgcPartIncrement.Enabled(True)
+Gui.frmRuleSetup.gsgcPartIncrement.Visible(True)
+Gui.frmRuleSetup.gsgcPartIncrement.Zorder(0)
+Gui.frmRuleSetup.gsgcPartIncrement.Size(4200,1050)
+Gui.frmRuleSetup.gsgcPartIncrement.Position(8355,4605)
+Gui.frmRuleSetup.txtIncQuantity.Create(TextBox,"",True,1065,300,0,11010,1020,True,0,"Tahoma",8.25,,1)
+Gui.frmRuleSetup.txtIncQuantity.NumericOnly(2)
+Gui.frmRuleSetup.txtIncQuantity.DefaultValue("0")
+Gui.frmRuleSetup.chkDisablePartID.Create(CheckBox)
+Gui.frmRuleSetup.chkDisablePartID.Enabled(True)
+Gui.frmRuleSetup.chkDisablePartID.Visible(True)
+Gui.frmRuleSetup.chkDisablePartID.Zorder(0)
+Gui.frmRuleSetup.chkDisablePartID.Size(3690,300)
+Gui.frmRuleSetup.chkDisablePartID.Position(8325,1350)
+Gui.frmRuleSetup.chkDisablePartID.Caption("Disable Customer Part / Part ID")
+Gui.frmRuleSetup.chkDisablePartID.FontName("Tahoma")
+Gui.frmRuleSetup.chkDisablePartID.FontSize(8.25)
+Gui.frmRuleSetup.chkCustomerPartID.Create(CheckBox)
+Gui.frmRuleSetup.chkCustomerPartID.Enabled(True)
+Gui.frmRuleSetup.chkCustomerPartID.Visible(True)
+Gui.frmRuleSetup.chkCustomerPartID.Zorder(0)
+Gui.frmRuleSetup.chkCustomerPartID.Size(3300,300)
+Gui.frmRuleSetup.chkCustomerPartID.Position(8325,1680)
+Gui.frmRuleSetup.chkCustomerPartID.Caption("Set Customer Part label to Part ID")
+Gui.frmRuleSetup.chkCustomerPartID.FontName("Tahoma")
+Gui.frmRuleSetup.chkCustomerPartID.FontSize(8.25)
+Gui.frmRuleSetup.chkAutoSaveBOM.Create(CheckBox)
+Gui.frmRuleSetup.chkAutoSaveBOM.Enabled(True)
+Gui.frmRuleSetup.chkAutoSaveBOM.Visible(True)
+Gui.frmRuleSetup.chkAutoSaveBOM.Zorder(0)
+Gui.frmRuleSetup.chkAutoSaveBOM.Size(3195,300)
+Gui.frmRuleSetup.chkAutoSaveBOM.Position(8325,690)
+Gui.frmRuleSetup.chkAutoSaveBOM.Caption("Auto Save on BOM Change")
+Gui.frmRuleSetup.chkAutoSaveBOM.FontName("Tahoma")
+Gui.frmRuleSetup.chkAutoSaveBOM.FontSize(8.25)
+Gui.frmRuleSetup.chkViewInventory.Create(CheckBox)
+Gui.frmRuleSetup.chkViewInventory.Enabled(True)
+Gui.frmRuleSetup.chkViewInventory.Visible(True)
+Gui.frmRuleSetup.chkViewInventory.Zorder(0)
+Gui.frmRuleSetup.chkViewInventory.Size(3195,300)
+Gui.frmRuleSetup.chkViewInventory.Position(8325,2025)
+Gui.frmRuleSetup.chkViewInventory.Caption("View Inventory List Upon Load")
+Gui.frmRuleSetup.chkViewInventory.FontName("Tahoma")
+Gui.frmRuleSetup.chkViewInventory.FontSize(8.25)
+Gui.frmRuleSetup.chkPowderCoat.Create(CheckBox)
+Gui.frmRuleSetup.chkPowderCoat.Enabled(True)
+Gui.frmRuleSetup.chkPowderCoat.Visible(True)
+Gui.frmRuleSetup.chkPowderCoat.Zorder(0)
+Gui.frmRuleSetup.chkPowderCoat.Size(3195,300)
+Gui.frmRuleSetup.chkPowderCoat.Position(8325,2955)
+Gui.frmRuleSetup.chkPowderCoat.Caption("Use Powder Coating Calculator")
+Gui.frmRuleSetup.chkPowderCoat.FontName("Tahoma")
+Gui.frmRuleSetup.chkPowderCoat.FontSize(8.25)
+Gui.frmRuleSetup.lbl2.Create(Label,"Map Material to User Field",True,1860,195,0,12675,270,True,0,"Tahoma",8.25,,0,0)
+Gui.frmRuleSetup.lbl2.BorderStyle(0)
+Gui.frmRuleSetup.lbl5.Create(Label,"Map Material Thick. to User Field",True,2325,195,0,12225,735,True,0,"Tahoma",8.25,,0,0)
+Gui.frmRuleSetup.lbl5.BorderStyle(0)
+Gui.frmRuleSetup.txtMaterialUser.Create(TextBox,"",True,450,300,0,14625,225,True,0,"Tahoma",8.25,,1)
+Gui.frmRuleSetup.txtMaterialUser.NumericOnly(2)
+Gui.frmRuleSetup.txtMaterialThickUser.Create(TextBox,"",True,450,300,0,14625,705,True,0,"Tahoma",8.25,,1)
+Gui.frmRuleSetup.txtMaterialThickUser.NumericOnly(2)
+Gui.frmRuleSetup.chkMultipleMaterials.Create(CheckBox)
+Gui.frmRuleSetup.chkMultipleMaterials.Enabled(True)
+Gui.frmRuleSetup.chkMultipleMaterials.Visible(True)
+Gui.frmRuleSetup.chkMultipleMaterials.Zorder(0)
+Gui.frmRuleSetup.chkMultipleMaterials.Size(3750,300)
+Gui.frmRuleSetup.chkMultipleMaterials.Position(8325,2340)
+Gui.frmRuleSetup.chkMultipleMaterials.Caption("Use Multiple Materials")
+Gui.frmRuleSetup.chkMultipleMaterials.FontName("Tahoma")
+Gui.frmRuleSetup.chkMultipleMaterials.FontSize(8.25)
+Gui.frmRuleSetup.gsgcComponentBrowser.Create(GsGridControl)
+Gui.frmRuleSetup.gsgcComponentBrowser.Enabled(True)
+Gui.frmRuleSetup.gsgcComponentBrowser.Visible(True)
+Gui.frmRuleSetup.gsgcComponentBrowser.Zorder(0)
+Gui.frmRuleSetup.gsgcComponentBrowser.Size(5325,2175)
+Gui.frmRuleSetup.gsgcComponentBrowser.Position(15360,600)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Create(GsGridControl)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Enabled(True)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Visible(True)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Zorder(0)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Size(5325,2340)
+Gui.frmRuleSetup.gsgcMaterialBrowser.Position(15360,3270)
+Gui.frmRuleSetup.chkUseSquares.Create(CheckBox)
+Gui.frmRuleSetup.chkUseSquares.Enabled(True)
+Gui.frmRuleSetup.chkUseSquares.Visible(True)
+Gui.frmRuleSetup.chkUseSquares.Zorder(0)
+Gui.frmRuleSetup.chkUseSquares.Size(3750,300)
+Gui.frmRuleSetup.chkUseSquares.Position(8325,2655)
+Gui.frmRuleSetup.chkUseSquares.Caption("Use Squares instead of Per Sheet")
+Gui.frmRuleSetup.chkUseSquares.FontName("Tahoma")
+Gui.frmRuleSetup.chkUseSquares.FontSize(8.25)
+Gui.frmRuleSetup.lbl18.Create(Label,"Sort Codes for Component Browser",True,2550,195,0,15345,180,True,0,"Tahoma",8.25,,0,0)
+Gui.frmRuleSetup.lbl18.BorderStyle(0)
+Gui.frmRuleSetup.lbl19.Create(Label,"Sort Codes for Material Browser",True,2295,195,0,15405,2955,True,0,"Tahoma",8.25,,0,0)
+Gui.frmRuleSetup.lbl19.BorderStyle(0)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Create(CheckBox)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Enabled(True)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Visible(True)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Zorder(0)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Size(3900,300)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Position(8340,3300)
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.Caption("Do not allow Non-Material Codes")
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.FontName("Tahoma")
+Gui.frmRuleSetup.chkDoNotAllowNonMaterial.FontSize(8.25)
+Gui.frmRuleSetup.chkProfitCenter.Create(CheckBox)
+Gui.frmRuleSetup.chkProfitCenter.Enabled(True)
+Gui.frmRuleSetup.chkProfitCenter.Visible(True)
+Gui.frmRuleSetup.chkProfitCenter.Zorder(0)
+Gui.frmRuleSetup.chkProfitCenter.Size(3900,300)
+Gui.frmRuleSetup.chkProfitCenter.Position(11340,1395)
+Gui.frmRuleSetup.chkProfitCenter.Caption("Profit Centre Order Numbering")
+Gui.frmRuleSetup.chkProfitCenter.FontName("Tahoma")
+Gui.frmRuleSetup.chkProfitCenter.FontSize(8.25)
+Gui.frmRuleSetup.chkLargeLabour.Create(CheckBox)
+Gui.frmRuleSetup.chkLargeLabour.Enabled(True)
+Gui.frmRuleSetup.chkLargeLabour.Visible(True)
+Gui.frmRuleSetup.chkLargeLabour.Zorder(0)
+Gui.frmRuleSetup.chkLargeLabour.Size(3900,300)
+Gui.frmRuleSetup.chkLargeLabour.Position(11325,1770)
+Gui.frmRuleSetup.chkLargeLabour.Caption("Large Labour")
+Gui.frmRuleSetup.chkLargeLabour.FontName("Tahoma")
+Gui.frmRuleSetup.chkLargeLabour.FontSize(8.25)
+Gui.frmRuleSetup.chkDefaultMarkup.Create(CheckBox)
+Gui.frmRuleSetup.chkDefaultMarkup.Enabled(True)
+Gui.frmRuleSetup.chkDefaultMarkup.Visible(True)
+Gui.frmRuleSetup.chkDefaultMarkup.Zorder(0)
+Gui.frmRuleSetup.chkDefaultMarkup.Size(3030,300)
+Gui.frmRuleSetup.chkDefaultMarkup.Position(11340,2160)
+Gui.frmRuleSetup.chkDefaultMarkup.Caption("Default Markups to User 4 & 5 fields")
+Gui.frmRuleSetup.chkDefaultMarkup.FontName("Tahoma")
+Gui.frmRuleSetup.chkDefaultMarkup.FontSize(8.25)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+f.Intrinsic.Control.Try
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(TRUE)
+	f.ODBC.Connection!conx.opencompanyconnection(90)
+	GUI.frmRuleSetup.gsGCWorkcentre.Anchor(15)
+	
+	'Check if the config file exists
+	V.Local.ssql.Declare
+	v.Local.bFileCheck.Declare
+	v.Local.bCheck.Declare
+	v.Local.sFileLocat.Declare
+	v.Local.fPack.Declare
+	v.Local.sUM.Declare
+	v.Local.sPL.Declare
+	v.Local.sCut.Declare
+	v.Local.sInc.Declare
+	v.Local.iNum.Declare
+	
+	'config file
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_CONFIG_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Data.DataTable.CreateFromXML("dt",v.Local.sFileLocat,true)
+	f.Intrinsic.Control.Else
+		f.Data.DataTable.Create("dt",true)
+		f.Data.DataTable.AddColumn("dt","Seq","String")
+		f.Data.DataTable.AddColumn("dt","Workcentre","String")
+		f.Data.DataTable.AddColumn("dt","Tag","String")
+		f.Data.DataTable.AddRow("dt","Tag","Programming")
+		f.Data.DataTable.AddRow("dt","Tag","Cutting")
+	f.Intrinsic.Control.EndIf
+	
+	'Component sort codes
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_COMP_SORT_CODES_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Data.DataTable.CreateFromXML("dtCompSortCodes",v.Local.sFileLocat,true)
+	f.Intrinsic.Control.Else
+		f.Data.DataTable.Create("dtCompSortCodes",true)
+		f.Data.DataTable.AddColumn("dtCompSortCodes","SortCode","String")
+	f.Intrinsic.Control.EndIf
+	
+	'Material Sort Codes
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_MAT_SORT_CODES_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Data.DataTable.CreateFromXML("dtMatSortCodes",v.Local.sFileLocat,true)
+	f.Intrinsic.Control.Else
+		f.Data.DataTable.Create("dtMatSortCodes",true)
+		f.Data.DataTable.AddColumn("dtMatSortCodes","SortCode","String")
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default Packing exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PACK_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.fPack)
+		gui.frmRuleSetup.txtDefaultPacking.Text(v.Local.fPack)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtDefaultPacking.Text(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default PL exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sPL)
+		gui.frmRuleSetup.txtPL.Text(v.Local.sPL)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtPL.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default UM exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_UM_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sUM)
+		gui.frmRuleSetup.txtUM.Text(v.Local.sUM)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtUM.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Material User Field
+	v.Local.sMaterial.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MATERIAL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sMaterial)
+		gui.frmRuleSetup.txtMaterialUser.Text(v.Local.sMaterial)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtMaterialUser.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Material User Field
+	v.Local.sMaterialThick.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MATERIALTHICK_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sMaterialThick)
+		gui.frmRuleSetup.txtMaterialThickUser.Text(v.Local.sMaterialThick)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtMaterialThickUser.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default Powder exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_POWDERVALUES_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sPowder)
+		f.Intrinsic.String.Split(v.Local.sPowder,"*!*",v.Local.sPowder)
+		gui.frmRuleSetup.txtGap.Text(v.Local.sPowder(0))
+		gui.frmRuleSetup.txtManPower.Text(v.Local.sPowder(1))
+		gui.frmRuleSetup.txtPowLabour.Text(v.Local.sPowder(2))
+		gui.frmRuleSetup.txtPowSetupCost.Text(v.Local.sPowder(3))
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtUM.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default Cutting exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_CUT_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sCut)
+		gui.frmRuleSetup.txtDefaultCutting.Text(v.Local.sCut)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtDefaultCutting.Text("")
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Default Increment Exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_INC_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sInc)
+		gui.frmRuleSetup.chkAutoIncrement.Value(v.Local.sInc)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkAutoIncrement.Value(0)
+	f.Intrinsic.Control.EndIf
+		
+	'Check if Default Increment Exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_INCNUMB_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.iNum)
+		gui.frmRuleSetup.txtIncQuantity.Text(v.Local.iNum)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.txtIncQuantity.Text(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check if Part ID description should be in place
+	v.Local.sPartID.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PARTID_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sPartID)
+		gui.frmRuleSetup.chkCustomerPartID.Value(v.Local.sPartID)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkCustomerPartID.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check Part Disable Option
+	v.Local.sPartDisable.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PARTDISABLE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sPartDisable)
+		gui.frmRuleSetup.chkDisablePartID.Value(v.Local.sPartDisable)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkDisablePartID.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check Auto Save Option
+	v.Local.sAutoSave.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_AUTOSAVE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sAutoSave)
+		gui.frmRuleSetup.chkAutoSaveBOM.Value(v.Local.sAutoSave)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkAutoSaveBOM.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check Large Labour
+	v.Local.sLargeLabour.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_LARGELABOUR_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sLargeLabour)
+		gui.frmRuleSetup.chkLargeLabour.Value(v.Local.sLargeLabour)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkLargeLabour.Value(0)
+	f.Intrinsic.Control.EndIf
+		
+	'Check Inventory vs Router View
+	v.Local.sViewInv.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_VIEWINV_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sViewInv)
+		gui.frmRuleSetup.chkViewInventory.Value(v.Local.sViewInv)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkViewInventory.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check Powder Coat
+	v.Local.sPowder.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_POWDER_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sPowder)
+		gui.frmRuleSetup.chkPowderCoat.Value(v.Local.sPowder)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkPowderCoat.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	
+	'Check Multiple materials	
+	v.Local.sMultiple.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MULTIPLE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sMultiple)
+		gui.frmRuleSetup.chkMultipleMaterials.Value(v.Local.sMultiple)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkMultipleMaterials.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check Squares
+	v.Local.sSquares.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_SQUARES_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sSquares)
+		gui.frmRuleSetup.chkUseSquares.Value(v.Local.sSquares)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkUseSquares.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Non Material
+	v.Local.sNonMaterial.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_NONMATERIAL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sNonMaterial)
+		gui.frmRuleSetup.chkDoNotAllowNonMaterial.Value(v.Local.sNonMaterial)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkDoNotAllowNonMaterial.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Default Markup
+	v.Local.sDefaultMarkup.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MARKUP_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sDefaultMarkup)
+		gui.frmRuleSetup.chkDefaultMarkup.Value(v.Local.sDefaultMarkup)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkDefaultMarkup.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Profit Centre
+	v.Local.sProfitCentre.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PROFITCENTRE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Intrinsic.File.File2String(v.Local.sFileLocat,v.Local.sProfitCentre)
+		gui.frmRuleSetup.chkProfitCenter.Value(v.Local.sProfitCentre)
+	f.Intrinsic.Control.Else
+		gui.frmRuleSetup.chkProfitCenter.Value(0)
+	f.Intrinsic.Control.EndIf
+	
+	'Check if the part ref file exists
+	F.ODBC.Connection!CONX.TableExists("GAB_6595_PART_REF",v.Local.bCheck)
+	f.Intrinsic.Control.If(v.Local.bCheck,=,False)
+		v.Local.ssql.Set("CREATE TABLE GAB_6595_PART_REF ( PART_PREFIX VARCHAR(10), DESCRIPTION VARCHAR(50), LASTNUMBER INTEGER );")
+		f.ODBC.Connection!conx.execute(v.Local.ssql)
+		F.Data.DataTable.CreateFromSQL("dtPartInc","conx","SELECT * FROM GAB_6595_PART_REF",true)
+	F.Intrinsic.Control.Else
+		F.Data.DataTable.CreateFromSQL("dtPartInc","conx","SELECT * FROM GAB_6595_PART_REF",true)
+	f.Intrinsic.Control.EndIf
+	
+	'Check if the step file exists
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_STEPS_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Intrinsic.File.Exists(v.Local.sFileLocat,v.Local.bFileCheck)
+	f.Intrinsic.Control.If(v.Local.bFileCheck)
+		f.Data.DataTable.CreateFromXML("dtSteps",v.Local.sFileLocat,true)
+	f.Intrinsic.Control.Else
+		f.Data.DataTable.Create("dtSteps",true)
+		f.Data.DataTable.AddColumn("dtSteps","USER_4","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_RTR_COUNT","String")
+		f.Data.DataTable.AddColumn("dtSteps","THRESHOLD","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_UM","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_PL","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_SRC","String")
+		f.Data.DataTable.AddColumn("dtSteps","DOC_CONTROL_PATH","String")
+		f.Data.DataTable.AddColumn("dtSteps","INCREMENTS","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_PACKING","String")
+		f.Data.DataTable.AddColumn("dtSteps","WORKCENTRE","String")
+		f.Data.DataTable.AddColumn("dtSteps","WORKCENTRES_ORDER","Integer")
+		f.Data.DataTable.AddColumn("dtSteps","WORKCENTRES_DISPLAY","String")
+		f.Data.DataTable.AddColumn("dtSteps","WC_DESCRIPTION","String")
+		f.Data.DataTable.AddColumn("dtSteps","LABOUR_UNIT_DESC1","String")
+		f.Data.DataTable.AddColumn("dtSteps","LABOUR_UNIT_DESC2","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_RUN_RATE","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_RUN_TYPE","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_SETUP_TIME","String")
+		f.Data.DataTable.AddColumn("dtSteps","DEFAULT_SETUP_RATE","String")
+		f.Data.DataTable.AddColumn("dtSteps","COST_UNIT","String")
+		f.Data.DataTable.AddColumn("dtSteps","Opcode","String")
+	f.Intrinsic.Control.EndIf
+	
+	gui.frmRuleSetup.gsgcComponentBrowser.DataSource("dtCompSortCodes")
+	gui.frmRuleSetup.gsgcComponentBrowser.AddGridviewFromDatatable("gvCompSortCodes","dtCompSortCodes")
+	GUI.frmRuleSetup.gsgcComponentBrowser.SetGridviewProperty("gvCompSortCodes","AllowAddRows","true")
+	GUI.frmRuleSetup.gsgcComponentBrowser.SetGridviewProperty("gvCompSortCodes","AllowDeleteRows","true")
+	gui.frmRuleSetup.gsgcComponentBrowser.SetGridviewProperty("gvCompSortCodes","ReadOnly","False")
+	gui.frmRuleSetup.gsgcComponentBrowser.SetGridviewProperty("gvCompSortCodes","Editable","True")
+	
+	gui.frmRuleSetup.gsgcMaterialBrowser.DataSource("dtMatSortCodes")
+	gui.frmRuleSetup.gsgcMaterialBrowser.AddGridviewFromDatatable("gvMatSortCodes","dtMatSortCodes")
+	GUI.frmRuleSetup.gsgcMaterialBrowser.SetGridviewProperty("gvMatSortCodes","AllowAddRows","true")
+	GUI.frmRuleSetup.gsgcMaterialBrowser.SetGridviewProperty("gvMatSortCodes","AllowDeleteRows","true")
+	gui.frmRuleSetup.gsgcMaterialBrowser.SetGridviewProperty("gvMatSortCodes","ReadOnly","False")
+	gui.frmRuleSetup.gsgcMaterialBrowser.SetGridviewProperty("gvMatSortCodes","Editable","True")
+	
+	gui.frmRuleSetup.ddlTimeType.AddItem("S")
+	gui.frmRuleSetup.ddlTimeType.AddItem("M")
+	gui.frmRuleSetup.ddlTimeType.AddItem("H")
+	
+	GUI.frmRuleSetup.gsgcRules.DataSource("dt")
+	gui.frmRuleSetup.gsgcRules.AddGridviewFromDatatable("gv","dt")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Seq","ReadOnly","false")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Seq","AllowEdit","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Workcentre","ReadOnly","false")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Workcentre","AllowEdit","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Workcentre","AllowEdit","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Tag","ReadOnly","false")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Tag","AllowEdit","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Tag","AllowEdit","True")
+	
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","SEQ","HeaderFontBold","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","WORKCENTRE","HeaderFontBold","True")
+	gui.frmRuleSetup.gsgcRules.SetColumnProperty("gv","Tag","HeaderFontBold","True")
+	GUI.frmRuleSetup.gsgcRules.SetGridviewProperty("gv","AllowDeleteRows","true")
+	GUI.frmRuleSetup.gsgcRules.SetGridviewProperty("gv","AllowAddRows","true")
+	
+	GUI.frmRuleSetup.gsGCWorkcentre.DataSource("dtSteps")
+	gui.frmRuleSetup.gsGCWorkcentre.AddGridviewFromDatatable("gvSteps","dtSteps")
+	gui.frmRuleSetup.gsGCWorkcentre.SetGridviewProperty("gvSteps","ReadOnly","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetGridviewProperty("gvSteps","Editable","True")
+	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","USER_4","ReadOnly","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","USER_4","Visible","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_RTR_COUNT","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","THRESHOLD","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_UM","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_PL","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_SRC","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","THRESHOLD","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DOC_CONTROL_PATH","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","INCREMENTS","Visible","False")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_PACKING","Visible","False")
+	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","USER_4","Caption","User 4")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRE","Caption","Work Center")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRES_ORDER","Caption","Position")	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRES_DISPLAY","Caption","Display WC?")	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WC_DESCRIPTION","Caption","Description")		
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","LABOUR_UNIT_DESC1","Caption","Lab. Unit")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","LABOUR_UNIT_DESC2","Caption","Lab. Units")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_RUN_RATE","Caption","Cost/Hour (Bill)")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_RUN_TYPE","Caption","Type")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_SETUP_TIME","Caption","Setup Time (Min.)")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_SETUP_RATE","Caption","Setup Rate")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","COST_UNIT","Caption","Cost Unit")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","OPCode","Caption","Op Code")
+	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","USER_4","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRE","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRES_ORDER","HeaderFontBold","True")	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WORKCENTRES_DISPLAY","HeaderFontBold","True")	
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","WC_DESCRIPTION","HeaderFontBold","True")		
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","LABOUR_UNIT_DESC1","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","LABOUR_UNIT_DESC2","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_RUN_RATE","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_RUN_TYPE","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_SETUP_TIME","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","DEFAULT_SETUP_RATE","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","COST_UNIT","HeaderFontBold","True")
+	gui.frmRuleSetup.gsGCWorkcentre.SetColumnProperty("gvSteps","OPcode","HeaderFontBold","True")
+
+	GUI.frmRuleSetup.gsGCWorkcentre.SetGridviewProperty("gvSteps","AllowDeleteRows","true")
+	
+	GUI.frmRuleSetup.gsgcPartIncrement.DataSource("dtPartInc")
+	gui.frmRuleSetup.gsgcPartIncrement.AddGridviewFromDatatable("gvPartInc","dtPartInc")
+	gui.frmRuleSetup.gsgcPartIncrement.SetGridviewProperty("gvPartInc","ReadOnly","False")
+	gui.frmRuleSetup.gsgcPartIncrement.SetGridviewProperty("gvPartInc","Editable","True")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","Part_Prefix","Caption","Part Prefix")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","Part_Prefix","HeaderFontBold","True")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","Description","HeaderFontBold","True")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","Description","Caption","Description")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","LastNumber","HeaderFontBold","True")
+	gui.frmRuleSetup.gsgcPartIncrement.SetColumnProperty("gvPartInc","LastNumber","Caption","Last Number")
+	GUI.frmRuleSetup.gsgcPartIncrement.SetGridviewProperty("gvPartInc","AllowDeleteRows","true")
+	GUI.frmRuleSetup.gsgcPartIncrement.SetGridviewProperty("gvPartInc","AllowAddRows","true")
+	
+	
+	gui.frmRuleSetup..Show
+f.Intrinsic.Control.Catch
+	f.Intrinsic.UI.Msgbox(v.Ambient.ErrorDescription)
+	f.Intrinsic.Control.CallSub(frmRuleSetup_UnLoad)
+f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.cmdMassAdd_Click.Start
+f.Intrinsic.Control.Try
+	v.Local.lwcordr.Declare(long)
+	v.Local.lwcdisp.Declare(long)
+	v.Local.lIncrements.Declare(long)
+	v.Local.lIncrements.Set(100)
+	V.Local.i.Declare
+	
+	F.Data.DataTable.CreateFromSQL("dtWCS","conx","SELECT machine, standard_bill, wc_name FROM V_WORKCENTERS")
+	f.Intrinsic.Control.For(v.Local.i,0,v.DataTable.dtWCS.RowCount--,1)
+		F.Data.DataTable.AddRow("dtSteps","Opcode","","WORKCENTRES_ORDER",0, "WORKCENTRES_DISPLAY",0, "INCREMENTS", v.Local.lIncrements,"WORKCENTRE",v.DataTable.dtWCS(v.Local.i).MACHINE!Fieldvaltrim,"WC_DESCRIPTION",v.DataTable.dtWCS(v.Local.i).WC_NAME!fieldvaltrim,"DEFAULT_SETUP_TIME",0,"DEFAULT_RUN_TYPE","M","LABOUR_UNIT_DESC1","","LABOUR_UNIT_DESC2","","DEFAULT_RUN_RATE",V.DataTable.dtWCS(V.Local.I).standard_bill!fieldval,"DEFAULT_SETUP_RATE",V.DataTable.dtWCS(V.Local.I).standard_bill!fieldval,"COST_UNIT","EA")
+	f.Intrinsic.Control.Next(v.Local.i)
+	f.Data.DataTable.Close("dtWCS")
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.UI.Msgbox(v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdMassAdd_Click.End
+
+Program.Sub.cmdAdd_Click.Start
+v.Local.lwcordr.Declare(long)
+v.Local.lwcordr.Set(v.Screen.frmRuleSetup!txtWCOrder.Text)
+v.Local.lwcdisp.Declare(long)
+v.Local.lwcdisp.Set(v.Screen.frmRuleSetup!chkShowWC.Value)
+v.Local.lIncrements.Declare(long)
+v.Local.lIncrements.Set(100)
+v.Local.sworkcn.Declare(string)
+v.Local.sworkcn.Set(v.Screen.frmRuleSetup!txtWCCode.text)
+v.Local.swdescr.Declare(string)
+v.Local.swdescr.Set(v.Screen.frmRuleSetup!txtDescription.Text)
+v.Local.sdfltum.Declare(string)
+v.Local.sdfltum.Set(v.Screen.frmRuleSetup!txtUM.Text)
+v.Local.sdfltpl.Declare(string)
+v.Local.sdfltpl.Set(v.Screen.frmRuleSetup!txtPL.text)
+v.Local.sdfltsr.Declare(string)
+v.Local.sdfltsr.set(v.Screen.frmRuleSetup!txtSR.Text)
+v.Local.fSetTim.Declare(float)
+v.Local.fSetTim.Set(v.Screen.frmRuleSetup!txtSetupTime.Text)
+v.Local.fRunTim.Declare(float)
+v.Local.fRunTim.set(0)
+v.Local.sRunTyp.Declare(string)
+v.Local.sRunTyp.Set(v.Screen.frmRuleSetup!ddlTimeType.text)
+v.Local.slabun1.Declare(string)
+v.Local.slabun1.Set(v.Screen.frmRuleSetup!txtLabourUnit1.text)
+v.Local.slabun2.Declare(string)
+v.Local.slabun2.Set(v.Screen.frmRuleSetup!txtLabourUnit2.text)
+v.Local.fRunCst.Declare(float)
+v.Local.fSetCst.Declare(float)
+v.Local.fSetCst.Set(v.Screen.frmRuleSetup!txtSetupRate.Text)
+v.Local.fRunRat.Declare(float)
+v.Local.fRunRat.Set(v.Screen.frmRuleSetup!txtbilling.text)
+v.Local.fSetRat.Declare(float)
+v.Local.fSetRat.Set(v.Screen.frmRuleSetup!txtSetupRate.text)
+
+v.Local.sdocpth.Declare(string)
+v.Local.sdocpth.Set(v.Screen.frmRuleSetup!txtDocumentControl.Text)
+v.Local.sCostUM.Declare(string)
+v.Local.sCostUM.Set(v.Screen.frmRuleSetup!txtCostUnit.text)
+v.Local.fdfltPK.Declare(float)
+v.Local.fdfltPK.Set(v.Screen.frmRuleSetup!txtDefaultPacking.text)
+
+v.Local.sWCUSER.Declare(string)
+v.Local.bExit.Declare(boolean)
+v.Local.bExit.Set(false)
+
+f.Intrinsic.Control.If(v.Local.sRunTyp.Trim,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.ddlTimeType.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.ddlTimeType.ForeColor(v.Color.White)
+	gui.frmRuleSetup.ddlTimeType.BackColor(v.Color.LtRed)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.ddlTimeType.BackColor(-2147483633)
+	gui.frmRuleSetup.ddlTimeType.BackColor(v.Color.White)
+	gui.frmRuleSetup.ddlTimeType.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.frmRuleSetup!txtSetupTime.text,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtSetupTime.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtSetupTime.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtSetupTime.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtSetupTime.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Local.sworkcn.Trim,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtWCCode.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtWCCode.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtWCCode.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtWCCode.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Local.swdescr.Trim,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtDescription.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtDescription.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtDescription.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtDescription.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.frmRuleSetup!txtbilling.text,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtbilling.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtbilling.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtbilling.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtbilling.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.frmRuleSetup!txtCostUnit.text,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtCostUnit.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtCostUnit.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtCostUnit.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtCostUnit.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.frmRuleSetup!txtSetupRate.text,=,"")
+	v.Local.bExit.Set(true) 
+	gui.frmRuleSetup.txtSetupRate.BackColor(v.Color.LtRed)
+	gui.frmRuleSetup.txtSetupRate.ForeColor(v.Color.White)
+f.Intrinsic.Control.Else
+	gui.frmRuleSetup.txtSetupRate.BackColor(v.Color.White)
+	gui.frmRuleSetup.txtSetupRate.ForeColor(v.Color.Black)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Local.bExit,=,true)
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+V.Local.sCheck.Declare(string)
+f.Intrinsic.String.Concat(v.Local.sworkcn,v.Caller.User,v.Local.sCheck)
+V.Local.ssql.Declare(string)
+V.Local.sRet.Declare(string)
+
+F.Data.DataTable.AddRow("dtSteps","Opcode",v.Screen.frmRuleSetup!txtOpCode.Text,"WORKCENTRES_ORDER", v.Local.lwcordr, "WORKCENTRES_DISPLAY", v.Local.lwcdisp, "INCREMENTS", v.Local.lIncrements,"WORKCENTRE",v.Local.sworkcn,"WC_DESCRIPTION",v.Local.swdescr,"DEFAULT_UM",v.Local.sdfltum,"DEFAULT_PL",v.Local.sdfltpl,"DEFAULT_SRC",v.Local.sdfltsr,"DEFAULT_SETUP_TIME",v.Local.fSetTim,"DEFAULT_RUN_TYPE",v.Local.sRunTyp,"LABOUR_UNIT_DESC1",v.Local.slabun1,"LABOUR_UNIT_DESC2",v.Local.slabun2,"DEFAULT_RUN_RATE",v.Local.fRunRat,"DEFAULT_SETUP_RATE",v.Local.fSetRat,"DOC_CONTROL_PATH",v.Local.sdocpth,"COST_UNIT",v.Local.sCostUM,"DEFAULT_PACKING",v.Local.fdfltPK)
+gui.frmRuleSetup.txtWCCode.Text("")
+gui.frmRuleSetup.chkShowWC.Value(0)
+gui.frmRuleSetup.txtWCOrder.Text("")
+gui.frmRuleSetup.txtDescription.Text("")
+gui.frmRuleSetup.txtSetupTime.Text("")
+gui.frmRuleSetup.ddlTimeType.Text("")
+gui.frmRuleSetup.txtLabourUnit1.Text("")
+gui.frmRuleSetup.txtLabourUnit2.Text("")
+gui.frmRuleSetup.txtSetupRate.Text("")
+gui.frmRuleSetup.txtbilling.Text("")
+gui.frmRuleSetup.txtCostUnit.Text("")
+Program.Sub.cmdAdd_Click.End
+
+Program.Sub.cmdPLCust_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+
+F.intrinsic.string.split("PL*!*Description","*!*",Variable.local.sTitles)
+F.intrinsic.string.split("2000*!*3000","*!*",Variable.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT PROD_LINE, PL_NAME FROM V_PL_MASTER")
+
+F.intrinsic.ui.browser("Select a Product line",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+	F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+	gui.frmRuleSetup.txtCustProductLine.Text(v.Local.sRet(0))
+F.Intrinsic.Control.endif
+Program.Sub.cmdPLCust_Click.End
+
+Program.Sub.cmdWCBrowse_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+F.intrinsic.string.split("MACHINE*!*WC_NAME*!*BILLING","*!*",V.local.sTitles)
+F.intrinsic.string.split("2000*!*3000*!*1000","*!*",V.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT machine,wc_name,standard_bill FROM V_WORKCENTERS")
+
+F.intrinsic.ui.browser("Select a Workcentre",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+  F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+  gui.frmRuleSetup.txtWCCode.Text(v.Local.sRet(0))
+  gui.frmRuleSetup.txtDescription.Text(v.Local.sRet(1))
+  gui.frmRuleSetup.txtbilling.Text(v.Local.sRet(2))
+  gui.frmRuleSetup.txtSetupRate.text(v.Local.sRet(2))
+F.Intrinsic.Control.endif
+Program.Sub.cmdWCBrowse_Click.End
+
+Program.Sub.cmdCustBrowse_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+
+F.intrinsic.string.split("CUSTOMER*!*NAME_CUSTOMER","*!*",V.local.sTitles)
+F.intrinsic.string.split("2000*!*3000","*!*",V.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT customer,name_customer FROM V_CUSTOMER_MASTER")
+
+F.intrinsic.ui.browser("Select a Customer",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+  F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+  gui.frmRuleSetup.txtCustomer.Text(v.Local.sRet(0))
+  gui.frmRuleSetup.txtCustomerName.Text(v.Local.sRet(1))
+F.Intrinsic.Control.endif
+Program.Sub.cmdCustBrowse_Click.End
+
+Program.Sub.cmdCostUnit_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+
+F.intrinsic.string.split("UM*!*Description","*!*",Variable.local.sTitles)
+F.intrinsic.string.split("2000*!*3000","*!*",Variable.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT code,descr FROM V_UM_CODES")
+
+F.intrinsic.ui.browser("Select a UM Code",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+  F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+  gui.frmRuleSetup.txtCostUnit.Text(v.Local.sRet(0))
+F.Intrinsic.Control.endif
+Program.Sub.cmdCostUnit_Click.End
+
+Program.Sub.cmdDefaultPL_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+
+F.intrinsic.string.split("PL*!*Product Line","*!*",Variable.local.sTitles)
+F.intrinsic.string.split("2000*!*3000","*!*",Variable.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT PROD_LINE, PL_NAME FROM V_PL_MASTER")
+
+F.intrinsic.ui.browser("Select a Product Line",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+	F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+	gui.frmRuleSetup.txtPL.Text(v.Local.sRet(0))
+F.Intrinsic.Control.endif
+Program.Sub.cmdDefaultPL_Click.End
+
+Program.Sub.cmdUM_Click.Start
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.stemp.Declare(String)
+
+F.intrinsic.string.split("UM*!*Description","*!*",Variable.local.sTitles)
+F.intrinsic.string.split("2000*!*3000","*!*",Variable.local.iWidths)
+
+V.Local.ssql.Declare(String)
+V.Local.ssql.set("SELECT code,descr FROM V_UM_CODES")
+
+F.intrinsic.ui.browser("Select a UM Code",conx,v.Local.ssql,Variable.local.sTitles,Variable.local.iWidths,Variable.local.sRet)
+
+F.intrinsic.control.if(Variable.local.sRet,"=","***CANCEL***")
+F.intrinsic.control.else
+  F.intrinsic.string.split(Variable.local.sRet,"*!*",Variable.local.sRet)
+  gui.frmRuleSetup.txtUM.Text(v.Local.sRet(0))
+F.Intrinsic.Control.endif
+Program.Sub.cmdUM_Click.End
+
+Program.Sub.frmRuleSetup_UnLoad.Start
+f.ODBC.Connection!conx.Close
+F.Intrinsic.Control.End
+Program.Sub.frmRuleSetup_UnLoad.End
+
+Program.Sub.frmRuleSetup_SaveButtonClick.Start
+f.Intrinsic.Control.Try
+	V.Local.ssql.Declare
+	v.Local.i.Declare
+	f.ODBC.Connection!conx.Execute("DELETE FROM GAB_6595_PART_REF")
+	f.Intrinsic.Control.For(v.Local.i,0,v.DataTable.dtPartInc.RowCount--,1)
+		f.Intrinsic.Control.If(v.DataTable.dtPartInc(v.Local.i).RowState,<>,8)	
+			f.Intrinsic.String.Build("INSERT INTO GAB_6595_PART_REF VALUES ('{0}','{1}',{2})",V.DataTable.dtPartInc(v.Local.i).PART_PREFIX!Fieldvaltrim,v.DataTable.dtPartInc(v.Local.i).DESCRIPTION!Fieldvaltrim,v.DataTable.dtPartInc(v.Local.i).LastNumber!fieldval,v.Local.ssql)
+			f.ODBC.Connection!conx.Execute(v.Local.ssql)
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	v.Local.sFileLocat.Declare(string)
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_CONFIG_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Data.DataTable.SaveToXML("dt",0,true,v.Local.sfileLocat)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_STEPS_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Data.DataTable.SaveToXML("dtSteps",0,true,v.Local.sFileLocat)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_COMP_SORT_CODES_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Data.DataTable.SaveToXML("dtCompSortCodes",0,true,v.Local.sFileLocat)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_MAT_SORT_CODES_",v.Caller.CompanyCode,".xml",v.Local.sFileLocat)
+	f.Data.DataTable.SaveToXML("dtMatSortCodes",0,true,v.Local.sFileLocat)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PACK_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtDefaultPacking.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtPL.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_UM_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtUM.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_CUT_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtDefaultCutting.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MATERIAL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtMaterialUser.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MATERIALTHICK_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtMaterialThickUser.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_INC_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkAutoIncrement.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_INCNUMB_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!txtIncQuantity.text)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PARTID_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkCustomerPartID.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_PARTDISABLE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkDisablePartID.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_AUTOSAVE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkAutoSaveBOM.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_LARGELABOUR_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkLargeLabour.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_VIEWINV_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkViewInventory.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_POWDER_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkPowderCoat.Value)
+	
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_MULTIPLE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkMultipleMaterials.Value)
+	
+	F.Intrinsic.String.Concat(V.Caller.GasDir,"\GAB_6595_DEFAULT_SQUARES_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkUseSquares.Value)
+	
+	F.Intrinsic.String.Concat(V.Caller.GasDir,"\GAB_6595_DEFAULT_NONMATERIAL_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkDoNotAllowNonMaterial.Value)
+	
+	F.Intrinsic.String.Concat(V.Caller.GasDir,"\GAB_6595_DEFAULT_MARKUP_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkDefaultMarkup.Value)
+	
+	F.Intrinsic.String.Concat(V.Caller.GasDir,"\GAB_6595_DEFAULT_PROFITCENTRE_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,V.Screen.frmRuleSetup!chkProfitCenter.Value)
+	
+	
+	V.Local.sPowderValues.Declare
+	f.Intrinsic.String.Concat(v.Caller.GasDir,"\GAB_6595_DEFAULT_POWDERVALUES_",v.Caller.CompanyCode,".txt",v.Local.sFileLocat)
+	f.Intrinsic.String.Concat(v.Screen.frmRuleSetup!txtGap.Text,"*!*",v.Screen.frmRuleSetup!txtManPower.Text,"*!*",v.Screen.frmRuleSetup!txtPowLabour.Text,"*!*",v.Screen.frmRuleSetup!txtPowSetupCost.Text,v.Local.sPowderValues)
+	f.Intrinsic.File.String2File(v.Local.sFileLocat,v.Local.sPowderValues)
+	
+	f.Intrinsic.UI.Msgbox("Saved Successfully")
+	
+f.Intrinsic.Control.Catch
+	f.Intrinsic.UI.Msgbox(v.Ambient.ErrorDescription)
+	f.Intrinsic.Control.CallSub(frmRuleSetup_UnLoad)
+f.Intrinsic.Control.EndTry
+Program.Sub.frmRuleSetup_SaveButtonClick.End
+
+Program.Sub.cmdOpCode_Click.Start
+V.Local.sSQL.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.sColW.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sSQL.set("Select Machine, Operation, Description, Standard_setup, rate, unit_measure from V_OP_CODES WHERE LMO='L' OR LMO='O'")
+'Split Column Names into an array (*!* delimited string)
+F.Intrinsic.String.Split("WC*!*Op Code*!*Description*!*Setup*!*Cost*!*UM","*!*",V.Local.sCol)
+'Split Column widths into an array (*!* delimited string)
+F.Intrinsic.String.Split("600*!*800*!*3100*!*600*!*600*!*400","*!*",V.Local.sColW)
+F.Intrinsic.UI.Browser("Select a Op Code","conx",V.Local.sSQL,V.Local.sCol,V.Local.sColW,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	gui.frmRuleSetup.txtWCCode.Text(v.Local.sRet(0))
+	gui.frmRuleSetup.txtOpCode.Text(v.Local.sRet(1))
+	gui.frmRuleSetup.txtDescription.Text(v.Local.sRet(2))
+	gui.frmRuleSetup.txtSetupTime.Text(v.Local.sRet(3))
+	gui.frmRuleSetup.txtSetupRate.Text(v.Local.sRet(4))
+	gui.frmRuleSetup.txtbilling.Text(v.Local.sRet(4))
+	gui.frmRuleSetup.txtCostUnit.Text(v.Local.sRet(5))
+F.Intrinsic.Control.EndIf
+Program.Sub.cmdOpCode_Click.End
+
+Program.Sub.Comments.Start
+${$5$}$2.0.0.0$}$2
+${$6$}$pressing$}$20230403193452750$}$PSy2e0mDO0X+b595c+kxeCVdGd7JAo+mQ9bxQ9nCahj8QcYte4/2zFJuJrUiWd3CvSfzGcc+XYDCAvCX5Z1n7g==
+Program.Sub.Comments.End
