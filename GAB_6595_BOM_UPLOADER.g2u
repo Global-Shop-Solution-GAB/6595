@@ -1,0 +1,6 @@
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Global.General.CallWrapperSync(6010,"NS!*!50")
+Program.Sub.Main.End
